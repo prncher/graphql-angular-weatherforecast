@@ -1,7 +1,12 @@
 {
   "name": "graphql-angular-weatherforecast",
-  "version": "0.0.0",
-  "scripts": {
+  "version": "0.1.0",
+  "author": {
+    "name": "Prince Cheruvathur"
+  },
+  "private": false,
+  "license": "LGPL-3.0-or-later",
+    "scripts": {
     "ng": "ng",
     "start": "npm run server && ng serve",
     "build": "ng build",
@@ -9,7 +14,6 @@
     "test": "ng test",
     "server": "cd ../graphql-server && tsc && node ./dist/server.js &"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
