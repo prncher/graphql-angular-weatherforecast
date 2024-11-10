@@ -1,0 +1,13 @@
+<div class="outer" *ngIf="period !== undefined">
+    <h3>{{period.name}}</h3>
+    <img src={{period.icon}} alt="Icon">
+    <div class="inner">
+        <div>Short Forecast: {{period.shortForecast}}</div>
+        <div>Start: {{period.startTime}}</div>
+        <div>End: {{period.endTime}}</div>
+        <div>Temperature: {{period.temperature}}&deg;{{period.temperatureUnit}}</div>
+        <div>Wind Speed: {{period.windSpeed}}</div>
+        <div>Wind Direction: {{period.windDirection}}</div>
+        <div>Detailed: {{period.detailedForecast}}</div>
+    </div>
+</div>

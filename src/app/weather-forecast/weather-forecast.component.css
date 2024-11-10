@@ -1,0 +1,26 @@
+.outercontainer {
+    min-width: 1430px;
+    overflow: auto;
+    padding: 15px;
+    background: #d5d7df;
+    margin: 5px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;   
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+  }
+
+.error {
+    background-color: #e1a0b2;
+    color: red;
+    padding: 1em;
+    text-align: center;
+
+}

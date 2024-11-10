@@ -1,0 +1,31 @@
+.outer{
+    border: 1px solid #999;
+    max-width: 200px;
+    min-height: 350px;
+    font-size: 13px;
+    font-weight: 500;
+    h3 {
+        color: blue;
+    }    
+}
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div {
+        display: block;
+        padding: 1px 5px;
+        text-align: start;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    div:hover{
+        overflow: visible;
+        white-space: normal;
+        height:auto;
+        border: 2px ridge white;
+        z-index: 100;
+    }   
+}

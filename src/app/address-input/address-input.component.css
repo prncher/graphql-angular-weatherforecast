@@ -1,0 +1,20 @@
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #333;
+    label {
+        color: white;
+        margin: 3px 10px 3px auto;
+        width: 50px;
+        }
+    input, select {
+            width: 150px;
+            margin: 3px auto 3px 10px;
+            box-sizing: border-box;
+        }
+
+    button {
+        margin: 3px -80px 3px auto;
+        width: 70px;
+    }
+}

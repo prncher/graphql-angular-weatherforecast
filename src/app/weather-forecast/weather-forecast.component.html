@@ -1,0 +1,16 @@
+<!-- We could use a grid and that can eliminate walking through the periods twice-->
+<div class="outercontainer" *ngIf="periods.length > 0">
+    <div class="container">
+        <div *ngFor="let period of periods; let i = index">
+            <app-weather-forecast-item *ngIf="i%2 === 0" [period]="period"></app-weather-forecast-item>
+        </div>
+    </div>
+    <div class="container">
+        <div *ngFor="let period of periods; let i = index">
+            <app-weather-forecast-item *ngIf="i%2 !== 0" [period]="period"></app-weather-forecast-item>
+        </div>
+    </div>
+</div>
+<div class="error" *ngIf="errors.length > 0">
+    {{errors[0].message}}
+</div>

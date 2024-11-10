@@ -1,0 +1,15 @@
+<form [formGroup]="addressForm" (ngSubmit)="onSubmit()" *ngIf="states.length > 0">
+    <label for="street">Street: </label>
+    <input id="street" type="text" formControlName="street" placeholder="Type street name">
+
+    <label for="city">City: </label>
+    <input id="city" type="text" formControlName="city" placeholder="Type city name">
+
+    <label for="state">State: </label>
+    <select id="state" formControlName="state">
+        <option *ngFor="let state of states" [value]="state.abbreviation">
+            {{state.name}}
+        </option>
+    </select>
+    <button type="submit" [disabled]="!addressForm.valid">Submit</button>
+</form>
